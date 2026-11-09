@@ -1,7 +1,3 @@
-# Copyright (c) 2022-2026, The Isaac Lab Project Developers (https://github.com/isaac-sim/IsaacLab/blob/main/CONTRIBUTORS.md).
-# All rights reserved.
-#
-# SPDX-License-Identifier: BSD-3-Clause
 
 """
 Script to print all the available environments in Isaac Lab.
@@ -52,7 +48,7 @@ def main():
     index = 0
     # acquire all Isaac environments names
     for task_spec in gym.registry.values():
-        if "Template-" in task_spec.id and (args_cli.keyword is None or args_cli.keyword in task_spec.id):
+        if "Go2-Locomotion" in task_spec.id and (args_cli.keyword is None or args_cli.keyword in task_spec.id):
             # add details to table
             table.add_row([index + 1, task_spec.id, task_spec.entry_point, task_spec.kwargs["env_cfg_entry_point"]])
             # increment count

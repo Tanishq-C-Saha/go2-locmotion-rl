@@ -75,5 +75,11 @@
     },
     // Python extra paths
     // Note: this is filled up when vscode is set up for the first time
-    "python.analysis.extraPaths": []
+    "python.analysis.extraPaths": [
+            "/home/tanu/IsaacLab/source/isaaclab",
+            "/home/tanu/IsaacLab/source/isaaclab_tasks",
+            "/home/tanu/IsaacLab/source/isaaclab_rl",
+            "/home/tanu/IsaacLab/source/isaaclab_assets",
+            "/home/tanu/go2_locomotion_rl/source/go2_locomotion_rl"
+    ]
 }
